@@ -6,6 +6,10 @@
    align-items: center;
    padding: 20px;
 }
+.about img{
+   width: 250px;
+   height: auto;
+}
 .about .wrapper{
    width: 100%;
    max-width: 1366px;
@@ -19,6 +23,8 @@
    flex-direction: row-reverse;
 }
 .about .text, .about .picture{
+   height: 250px;
+   width:250px;
    flex: 1;
    padding: 5px;
 }
