@@ -1,4 +1,5 @@
-.topbar{
+/* Topbar Styles */
+.topbar {
    width: 100%;
    height: 50px;
    background-color: white;
@@ -7,14 +8,14 @@
    align-items: center;
    font-family: 'Josefin Sans', sans-serif;
 }
-.topbar .wrapper{
+.topbar .wrapper {
    width: 100%;
    max-width: 1366px;
    height: 100%;
    display: flex;
    flex-wrap: wrap;
 }
-.topbar .left, .topbar .right{
+.topbar .left, .topbar .right {
    flex: 3;
    height: 100%;
    display: flex;
@@ -25,44 +26,44 @@
    font-size: 1.3rem;
    cursor: pointer;
 }
-.topbar .center{
-   flex:6;
+.topbar .center {
+   flex: 6;
    height: 100%;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
 }
-.topbar .right .user{
+.topbar .right .user {
    width: 40px;
    height: 40px;
    border-radius: 50%;
    cursor: pointer;
 }
-.topbar .right .user img{
+.topbar .right .user img {
    width: 40px;
    height: 40px;
    border-radius: 50%;
 }
-.topbar .right .searchEngine{
-   width: 0px;
+.topbar .right .searchEngine {
+   width: 0;
    height: 100%;
    position: relative;
    display: flex;
    align-items: center;
    transition: all 0.5s;
 }
-.topbar .right .searchEngine input{
+.topbar .right .searchEngine input {
    width: 90%;
    margin-right: 10px;
-   border-radius: 3px 0px 0px 3px;
+   border-radius: 3px 0 0 3px;
    height: 25px;
-   padding: 0px 0px 0px 10px;
+   padding: 0 10px;
    opacity: 0;
    transition: all 0.5s;
 }
-.topbar .right .searchEngine i{
+.topbar .right .searchEngine i {
    position: absolute;
-   right: 0px;
+   right: 0;
    top: calc((100% - 30px) / 2);
    width: 30px;
    height: 30px;
@@ -73,26 +74,23 @@
    border-radius: 50%;
    cursor: pointer;
 }
-.topbar .right .searchEngine.active{
+.topbar .right .searchEngine.active {
    width: 70%;
 }
-.topbar .right .searchEngine.active input{
+.topbar .right .searchEngine.active input {
    opacity: 1;
 }
 
-
-
-/* Scroll animation area */
-.topbar .wrapper{
+/* Scroll Animation Area */
+.topbar .wrapper {
    transition: all 0.5s;
    opacity: 0;
    transform: translateY(-10px);
 }
-.topbar .wrapper.active{
+.topbar .wrapper.active {
    opacity: 1;
-   transform: translateY(0px);
+   transform: translateY(0);
 }
-
 .topbar .left i {
    opacity: 0;
    transform: translateX(-15px);
@@ -100,7 +98,7 @@
 }
 .topbar .wrapper.active .left i {
    opacity: 1;
-   transform: translateX(0px);
+   transform: translateX(0);
 }
 .topbar .wrapper.active .left i:nth-child(2) {
    transition-duration: 0.6s;
@@ -111,14 +109,12 @@
 .topbar .wrapper.active .left i:nth-child(4) {
    transition-duration: 1.2s;
 }
-
-
-.topbar .center, .topbar .right{
+.topbar .center, .topbar .right {
    transition: all 0.5s;
    opacity: 0;
    transform: translateX(-10px) translateY(-5px);
 }
-.topbar .wrapper.active .center, .topbar .wrapper.active .right{
+.topbar .wrapper.active .center, .topbar .wrapper.active .right {
    opacity: 1;
-   transform: translateX(0px) translateY(0px);
+   transform: translateX(0) translateY(0);
 }
